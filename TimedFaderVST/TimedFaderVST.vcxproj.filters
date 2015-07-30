@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="VST">
+      <UniqueIdentifier>{8f6a0fb4-eb67-4dc7-a74c-655bf43370a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VSTGUI">
+      <UniqueIdentifier>{e41e2416-e21f-4521-8d7b-73e04a8f72e4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\VST3 SDK\pluginterfaces\vst2.x\aeffect.h">
+      <Filter>VST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\pluginterfaces\vst2.x\aeffectx.h">
+      <Filter>VST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\aeffeditor.h">
+      <Filter>VST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffect.h">
+      <Filter>VST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffectx.h">
+      <Filter>VST</Filter>
+    </ClInclude>
+    <ClInclude Include="TimedFader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FaderDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\aeffguieditor.h">
+      <Filter>VSTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstcontrols.h">
+      <Filter>VSTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstgui.h">
+      <Filter>VSTGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffect.cpp">
+      <Filter>VST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffectx.cpp">
+      <Filter>VST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\vstplugmain.cpp">
+      <Filter>VST</Filter>
+    </ClCompile>
+    <ClCompile Include="TimedFader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\aeffguieditor.cpp">
+      <Filter>VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstcontrols.cpp">
+      <Filter>VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstgui.cpp">
+      <Filter>VSTGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="FaderDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\bmp00128.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\bmp00129.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\bmp00130.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\background.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\F12numsA.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\bmp00129h.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\bmp00130h.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Resources\Lights.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\TimedFaderVST.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

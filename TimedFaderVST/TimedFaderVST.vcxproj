@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1535BDF0-BE03-4F0F-99E4-640180A74E16}</ProjectGuid>
+    <RootNamespace>TimedFaderVST</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dll</TargetExt>
+    <OutDir>D:\Users\Spencer\Documents\VirtualDJ\Plugins\SoundEffect\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>D:\VST3 SDK;D:\VST3 SDK\public.sdk\source\vst2.x;D:\VST3 SDK\vstgui.sf\vstgui;D:\VST3 SDK\pluginterfaces\vst2.x;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_DEPRECATE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>vstplug.def</ModuleDefinitionFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <ImportLibrary>C:\TFS\TimedFaderVST\TimedFaderVST\Debug\TimedFaderVST.lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>D:\VST3 SDK;D:\VST3 SDK\public.sdk\source\vst2.x;D:\VST3 SDK\vstgui.sf\vstgui;D:\VST3 SDK\pluginterfaces\vst2.x;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_DEPRECATE=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>vstplug.def</ModuleDefinitionFile>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <ImportLibrary>C:\TFS\TimedFaderVST\TimedFaderVST\Debug\TimedFaderVST.lib</ImportLibrary>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\VST3 SDK\pluginterfaces\vst2.x\aeffect.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\pluginterfaces\vst2.x\aeffectx.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\aeffeditor.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffect.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffectx.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\aeffguieditor.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstcontrols.h" />
+    <ClInclude Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstgui.h" />
+    <ClInclude Include="FaderDisplay.h" />
+    <ClInclude Include="Resources\resource.h" />
+    <ClInclude Include="TimedFader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffect.cpp" />
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\audioeffectx.cpp" />
+    <ClCompile Include="..\..\..\VST3 SDK\public.sdk\source\vst2.x\vstplugmain.cpp" />
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\aeffguieditor.cpp" />
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstcontrols.cpp" />
+    <ClCompile Include="..\..\..\VST3 SDK\vstgui.sf\vstgui\vstgui.cpp" />
+    <ClCompile Include="FaderDisplay.cpp" />
+    <ClCompile Include="TimedFader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\background.bmp" />
+    <Image Include="Resources\bitmap1.bmp" />
+    <Image Include="Resources\bmp00128.bmp" />
+    <Image Include="Resources\bmp00129.bmp" />
+    <Image Include="Resources\bmp00129h.bmp" />
+    <Image Include="Resources\bmp00130.bmp" />
+    <Image Include="Resources\bmp00130h.bmp" />
+    <Image Include="Resources\F12numsA.png" />
+    <Image Include="Resources\Lights.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\TimedFaderVST.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
